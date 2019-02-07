@@ -10,6 +10,7 @@
   {{ show_jobs(jobs) }}
   
   <h2>Reviews</h2>
+  
       {% for review in reviews %}
     <div class="box">
       <article class="media">
@@ -24,7 +25,7 @@
           	<strong>{{ review['title'] }}</strong>
           	<small>{{ review['status'] }}</small>
           	<small>{{ review['date'] }}</small>
-          	{{ review ['review'] }}
+          	{{ review['review'] }}
           </div>
         </div>
       </article>
